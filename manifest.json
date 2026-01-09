@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "TikTok Detail Parser",
+  "version": "1.0.0",
+  "description": "Parses TikTok profile and video/photo detail payloads on tiktok.com.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.tiktok.com/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
